@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title> Deserves to be Educated </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div class="logo">
+				<h1>Educate Every Last Child</h1>
+				<h3>No one has ever become poor by giving.</h3>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="https://www.thesparksfoundationsingapore.org/"target="_blank"><h1>The Sparks Foundation</h1></a></li>
+					<li><a href="https://services.india.gov.in/service/listing?cat_id=68&ln=en"target="_blank"><h1>Education Grants</h1></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="D:\Sparks\travel.jpeg" class="donate">
+			<div id="circle">
+				<div class="Schemes one">
+					<div>
+						<h1>Contribute !!</h1>
+						<h2>Education is a Path, Not a Destination.</h2>
+					</div>
+				</div>
+				<div class="Schemes two">
+					<div>
+					<h1>Present !!</h1>
+						<h2>Educate the Needy by Donating</h2>
+					</div>
+				</div>
+				<div class="Schemes three">
+					<div>
+					<h1>Bestow !!</h1>
+						<h2>Donate for a balanced society.</h2>
+					</div>
+				</div>
+				<div class="Schemes four">
+					<div>
+					<h1>Gratuity !!</h1>
+						<h2>Never think of your contribution as small.</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="controls">
+			<img src="D:\Sparks\arrow1.png" id="upBtn">
+			<!--<h1>Donate Here</h1>-->
+			<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HmGqJR0DSccyRG" async> </script> </form>
+			<img src="D:\Sparks\arrow1.png" id="downBtn">
+		</div>
+
+		<script>
+			var circle = document.getElementById("circle");
+			var upBtn = document.getElementById("upBtn");
+			var downBtn = document.getElementById("downBtn");
+
+			var rotateValue = circle.style.transform;
+			var rotateSum;
+
+			upBtn.onclick = function(){
+				rotateSum = rotateValue + "rotate(-90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;			
+			}
+			downBtn.onclick = function(){
+				rotateSum = rotateValue + "rotate(90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;			
+			}
+		</script>
+	</div>
+</body>
+</html>
